@@ -38,3 +38,16 @@ User -|-< listItems
 | completed   | boolean     |
 
 ## Planning
+
+Create ERD
+Initiate repositories
+download templates - dev branch
+Create schema
+Create model
+Created routes
+Created actions for those routes
+Connected routes to server
+Test routes with postman
+deployed to heroku
+test server with postman
+--switching to front end
