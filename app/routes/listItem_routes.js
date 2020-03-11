@@ -29,7 +29,7 @@ const router = express.Router()
 
 // INDEX
 // GET /listItem
-router.get('/listItem', requireToken, (req, res, next) => {
+router.get('/listItems', requireToken, (req, res, next) => {
   ListItem.find()
     .then(listItem => {
       // `listItem` will be an array of Mongoose documents
@@ -45,7 +45,7 @@ router.get('/listItem', requireToken, (req, res, next) => {
 
 // SHOW
 // GET /listItem/5a7db6c74d55bc51bdf39793
-router.get('/listItem/:id', requireToken, (req, res, next) => {
+router.get('/listItems/:id', requireToken, (req, res, next) => {
   // req.params.id will be set based on the `:id` in the route
   ListItem.findById(req.params.id)
     .then(handle404)
@@ -57,7 +57,7 @@ router.get('/listItem/:id', requireToken, (req, res, next) => {
 
 // CREATE
 // POST /listItem
-router.post('/listItem', requireToken, (req, res, next) => {
+router.post('/listItems', requireToken, (req, res, next) => {
   // set owner of new listItem to be current user
   req.body.listItem.owner = req.user.id
 
@@ -74,7 +74,7 @@ router.post('/listItem', requireToken, (req, res, next) => {
 
 // UPDATE
 // PATCH /listItem/5a7db6c74d55bc51bdf39793
-router.patch('/listItem/:id', requireToken, removeBlanks, (req, res, next) => {
+router.patch('/listItems/:id', requireToken, removeBlanks, (req, res, next) => {
   // if the client attempts to change the `owner` property by including a new
   // owner, prevent that by deleting that key/value pair
   delete req.body.listItem.owner
@@ -97,7 +97,7 @@ router.patch('/listItem/:id', requireToken, removeBlanks, (req, res, next) => {
 
 // DESTROY
 // DELETE /listItem/5a7db6c74d55bc51bdf39793
-router.delete('/listItem/:id', requireToken, (req, res, next) => {
+router.delete('/listItems/:id', requireToken, (req, res, next) => {
   ListItem.findById(req.params.id)
     .then(handle404)
     .then(listItem => {
