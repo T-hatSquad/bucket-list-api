@@ -6,6 +6,7 @@ To run locally: `npm run server`
 ## Dependencies
 
 - [express-api-template](https://git.generalassemb.ly/ga-wdi-boston/express-api-template/)
+- [passport](https://www.npmjs.com/package/passport)
 <!-- - [dotenv](https://github.com/motdotla/dotenv)
 - [aws-sdk](https://www.npmjs.com/package/aws-sdk)
 - [uuid](https://www.npmjs.com/package/uuid)
