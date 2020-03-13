@@ -11,6 +11,14 @@ const listItemSchema = new mongoose.Schema({
     type: String,
     required: false
   },
+  lat: {
+    type: Number,
+    required: false
+  },
+  lng: {
+    type: Number,
+    required: false
+  },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
