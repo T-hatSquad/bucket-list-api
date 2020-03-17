@@ -6,7 +6,7 @@ for users of the Bucket List web app.
 
 ## Important Links
 
-- [Bucket List API](https://github.com/T-hatSquad/bucket-list-api)
+- [Bucket List API Repo](https://github.com/T-hatSquad/bucket-list-api)
 - [Bucket List Client Repo](https://github.com/T-hatSquad/bucket-list-client)
 - [Deployed API](https://gentle-ocean-46464.herokuapp.com/)
 - [Deployed Client](https://t-hatsquad.github.io/bucket-list-client/)
