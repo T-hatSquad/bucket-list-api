@@ -38,18 +38,18 @@ User -|--< listItems
 | description | string      |
 | owner       | foreign key |
 | completed   | boolean     |
-| latitude    | number      |
-| longitude   | number      |
+| lat         | number      |
+| lng         | number      |
 
 
 ## Planning and Development Story
 
-Planning for the Bucket List API began with the ERD. After setting up our Express
-API template, we began using kanban on GitHub to lay out the steps for developing
-our app. Frequently using the Teletype feature of Atom, we employed mob
-programming for most of our back-end development process: setting up our
-our schema, model, and CRUD routes and actions. We tested our routes with Postman
-before and after deploying to Heroku.
+Planning for the Bucket List API began with writing our ERD. After setting up
+our Express API template, we began using kanban on GitHub to lay out the steps
+for developing our app. Frequently using the Teletype feature of Atom, we
+employed mob programming for most of our back-end development process: setting
+up our schema, model, and CRUD routes and actions. We tested our local and
+deployed routes with Postman before and after deploying to Heroku, respectively.
 
 After we were satisfied that we had met our requirements for the minimum viable
 product on day two of development, we added longitude and latitude resources to
