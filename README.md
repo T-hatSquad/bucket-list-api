@@ -6,6 +6,7 @@ for users of the Bucket List web app.
 
 ## Important Links
 
+- [Bucket List API](https://github.com/T-hatSquad/bucket-list-api)
 - [Bucket List Client Repo](https://github.com/T-hatSquad/bucket-list-client)
 - [Deployed API](https://gentle-ocean-46464.herokuapp.com/)
 - [Deployed Client](https://t-hatsquad.github.io/bucket-list-client/)
@@ -15,7 +16,7 @@ for users of the Bucket List web app.
 
 - [GA Express-API-template](https://git.generalassemb.ly/ga-wdi-boston/express-api-template/)
 - Install dependencies: `npm install`
-- Start Express server: `npm run server`
+- Start local Express server: `npm run server`
 
 
 ## Technologies
